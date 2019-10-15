@@ -1,0 +1,16 @@
+h1{
+    background-color: yellow;
+    
+}
+
+a:visited:{
+    color: purple;
+}
+a:hover{
+    color: yellow;
+}
+
+p{
+    color: white;
+    background-color: blue;
+}
