@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+   <nav>
     <a href="index.html">Home</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+</nav> 
 </head>
+
 <body>
 
-    <h1>Survey Form</h1>
+    <h1 class="survey">Survey Form</h1>
 
     <p>Let us know how we can improve freeCodeCamp</p>
 
@@ -19,11 +26,46 @@
     <br>
 
     <label for="email">Email: </label>
-    <input type="email" id="email" name="email" placeholder="Enter your Email" required> 
-    
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
     <br>
 
     <label for="age">Age: </label>
     <input type="text" id="age" placeholder="Age" required>
+
+    <div>
+        <label>Which option best describe your current role?
+            <select name="select" required>
+                <option disabled selected>Selected</option>
+                <option value="">Teacher</option>
+                <option value="">TA</option>
+                <option value="">Student</option>
+            </select>
+        </label>
+    </div>
+<div>
+    <span>How likely is that you would recommend freeCodeCamp to a friend?</span>
+    <label for="definitely">Definitely</label>
+    <input type="radio" id="definitely" name="survey" required>
+    <label for="maybe">Maybe</label>
+    <input type="radio" id="maybe" name="survey">
+    <label for="notsure">Not Sure</label>
+    <input type="radio" id="notsure" name="survey">
+</div>
+
+<div>
+    <span>What do you like most in FCC: </span>
+    <span>(Check all that apply): </span>
+    <label for="front">Front-end Projects</label>
+    <input type="checkbox" id="front">
+
+    <label for="back">Back-end Projects</label>
+    <input type="checkbox" id="back">
+
+    <label for="data">Data Visualization</label>
+    <input type="checkbox" id="datat">
+
+</div>
 </body>
+
 </html>
